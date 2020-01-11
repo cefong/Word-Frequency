@@ -1,0 +1,14 @@
+Name: Celine Fong
+ID: 1580124
+CMPUT 274, Fall 2019
+Weekly Assignment #3: Word Frequency
+
+Included Files: 
+* freq.py
+* README
+
+Notes and Assumptions:
+
+The freq.py file contains five functions, take_cdline_argument() takes the filename passed in the command line and checks for errors. The next, file_to_list(filename) opens file of 'filename' and reads each word separated by a space into a list. The third, count_occurence(listname) counts the occurence of each word in list 'listname' and stores it into a dictionary. The fourth, format_freq_table(dictname) takes the dictionary of number of occurences as the argument and transforms it into a list of strings of formatted entries in a frequency table. The final function, write_to_file(tablename, newfile) takes the table of entry strings and writes it to a new file of name 'newfile'.out. Although this task could be completed using less functions, I broke the task up into these sections because I believe it will be easier to reuse functions I have created in freq.py in other situations. In order to use this program, it must be called from the command line with one valid filename immediately following the call to freq.py. 
+
+The error checking function does not check if the filename passed in the command line is a valid file, so it is assumed that any filename given to the command line leads to a valid file. Additionally, it is assumed that the input file that is passed to the program is located in the same directory as the program. Finally, it is assumed that the output file being written into is either empty or does not exist when the program beings to run. 
